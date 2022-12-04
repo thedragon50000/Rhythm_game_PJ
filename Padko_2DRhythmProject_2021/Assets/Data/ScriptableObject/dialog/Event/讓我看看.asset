@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c188b2a3ba86947a7f26e363193339, type: 3}
+  m_Name: "\u8B93\u6211\u770B\u770B"
+  m_EditorClassIdentifier: 
+  dialogStage:
+    dialogList:
+    - dialogStr: "\u5509\u5466~User\u4F60\u81C9\u7D05\u5566\uFF0C\u4F86!\u8B93\u6211\u770B\u770B!"
+      speaker: 1
+      chara: 1
+      selectOptions:
+      - text: "\u5E73\u59CA\u4E0D\u8981"
+        favorability: 0
+      - text: "\u597D\u8B9A\u5594"
+        favorability: 0
+      - text: "\u6211\u597D\u4E86"
+        favorability: 0
+      endText: 
+      background: 1
+      eventState: 0
+      audio: {fileID: 8300000, guid: b663c219fbfb0e1459586e1e02799b69, type: 3}
+    - dialogStr: "\u5509\u5466~User\u4F60\u81C9\u7D05\u5566\uFF0C\u4F86!\u8B93\u6211\u770B\u770B!"
+      speaker: 1
+      chara: 1
+      selectOptions:
+      - text: "\u5E73\u59CA\u4E0D\u8981!"
+        favorability: 30
+      - text: "\u597D\u8B9A\u5594"
+        favorability: 15
+      - text: "\u6211\u597D\u4E86"
+        favorability: 15
+      endText: 
+      background: 1
+      eventState: 1
+      audio: {fileID: 8300000, guid: b663c219fbfb0e1459586e1e02799b69, type: 3}
+  bgm: {fileID: 8300000, guid: 16f9c2ad88769494fa8c8028e1d433d7, type: 3}
+  track: {fileID: 11400000, guid: e00b08d77be69494fa344e66b6b8f268, type: 2}
+  charaImg:
+  - {fileID: 21300000, guid: e4d24624bfa9ef14dab3a4f5cab05f96, type: 3}
+  - {fileID: 21300000, guid: 8196a814e5f9a7c4bbb14db94d3edbff, type: 3}

@@ -1,0 +1,51 @@
+{
+    "charas": [
+        {
+            "name": "超越K",
+            "images": {
+                "list": [
+                    {
+                        "Key": "喜",
+                        "Value": {
+                            "instanceID": 27190
+                        }
+                    },
+                    {
+                        "Key": "怒",
+                        "Value": {
+                            "instanceID": 29196
+                        }
+                    },
+                    {
+                        "Key": "哀",
+                        "Value": {
+                            "instanceID": 30524
+                        }
+                    }
+                ]
+            },
+            "boolAttributes": {
+                "list": [
+                    {
+                        "Key": "1222",
+                        "Value": true
+                    },
+                    {
+                        "Key": "",
+                        "Value": false
+                    },
+                    {
+                        "Key": "",
+                        "Value": false
+                    }
+                ]
+            },
+            "floatAttributes": {
+                "list": []
+            },
+            "stringAttributes": {
+                "list": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,2735 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a2a0e7b268a4ed4f8cdb18333691732, type: 3}
+  m_Name: "\u96E8\u611BHARD3"
+  m_EditorClassIdentifier: 
+  trackTimerLists:
+  - timer: 6.9546485
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 7.2319956
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 7.530658
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 8.191996
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 9.002653
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 9.194649
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 9.301315
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 9.407982
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 9.493311
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 9.621315
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 9.727982
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 9.834648
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 9.919977
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 10.026644
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 10.13331
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 10.239977
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 11.455986
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 11.647982
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 11.98932
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 13.546644
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 13.802653
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 14.037324
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 14.421315
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 14.805328
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 14.997324
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.082653
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.210657
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.317325
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.402653
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.509319
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.615987
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.701315
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.8079815
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 15.914648
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 16.021315
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 17.10932
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 17.301315
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 17.74932
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 19.050657
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 19.327982
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 19.66932
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 20.30932
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 21.034649
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 21.205328
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 21.311995
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 21.397324
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 21.50399
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 21.610657
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 21.717325
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 21.823992
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 21.930658
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 22.037325
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 22.143991
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 23.44533
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 23.679977
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 24.063992
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 24.08533
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 25.557323
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 25.81331
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 26.111996
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 26.70932
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 27.434649
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 27.647982
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 27.73331
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 27.839977
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 27.946644
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 28.05331
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 28.159977
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 28.266644
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 28.37331
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 28.479977
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 29.354649
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 29.58932
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 29.994648
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 30.442654
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 30.719976
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 31.039978
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 31.317324
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 31.637323
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 31.999977
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 32.938663
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 33.237324
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 33.51465
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 33.813313
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 34.111996
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 34.431995
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 34.943993
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 35.135986
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 35.946644
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 36.245327
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 36.586643
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 36.86399
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 37.162655
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 37.482655
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 37.84533
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 38.89066
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 39.59465
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 39.91465
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 40.36265
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 40.55465
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 40.661316
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 40.767982
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 40.87465
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 40.959976
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 41.087982
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 41.74932
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 41.91998
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 42.218662
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 42.55998
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 42.751995
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 42.85866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 43.242653
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 43.455986
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 43.66932
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 43.967983
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 44.799976
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 45.20533
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 45.546642
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 45.88798
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 46.22932
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 46.591995
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 46.93331
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 47.274647
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 47.637325
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 48.021317
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 48.68265
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 48.831997
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 50.04798
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 50.36798
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 50.64533
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 50.901314
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 51.17866
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 51.455986
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 51.775986
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 52.22399
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 52.949318
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 53.141315
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 53.247982
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 53.35465
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 53.439976
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 53.546642
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 53.90932
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 54.271996
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 55.317326
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 55.637325
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 56.191994
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 56.38399
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 56.490658
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 56.597324
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 56.85331
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 57.237324
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 57.42932
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 57.557323
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 57.642654
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 57.770657
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 58.30399
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 58.70932
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 58.901314
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 59.00798
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 59.199978
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 59.797325
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 60.031994
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 60.266644
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 60.970657
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 61.247982
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 62.015987
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 62.335987
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 62.677322
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 63.16798
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 63.359978
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 63.807983
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 64.25599
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 64.44798
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 64.57599
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 64.661316
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 64.76798
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 64.87465
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 64.981316
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 65.55733
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 65.77066
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 66.02664
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 66.261314
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 66.559975
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 66.752
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 66.858665
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 67.22131
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 67.455986
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 67.73331
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 68.032
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 68.672
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 68.94932
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 69.16265
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 69.567986
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 69.80265
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 70.186646
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 70.527985
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 70.890656
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 71.42399
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 71.70132
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 72.06399
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 73.25866
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 73.599976
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 73.79199
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 73.87733
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 74.005325
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 74.261314
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 74.538666
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 74.837326
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 75.13599
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 75.41331
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 75.73331
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 76.138664
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 76.88533
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 77.055984
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 77.16265
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 77.26932
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 77.887985
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 78.250656
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 78.46399
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 78.54932
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 78.67732
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 78.78399
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 78.890656
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 79.29599
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 79.59465
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 80.19199
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 80.40533
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 80.51199
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 80.81066
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 81.10932
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 82.239975
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 82.49599
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 83.09331
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 83.28533
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 83.37066
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 83.477325
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 83.83998
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 84.138664
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 84.352
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 84.94932
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 85.22665
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 86.14399
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 86.37866
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 86.71998
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 87.10399
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 87.76533
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 88.44798
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 89.21599
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 89.83465
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 90.02664
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.11199
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.21866
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.325325
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.432
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.538666
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.64533
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.73066
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.837326
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 90.96533
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 91.072
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 91.157326
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 91.28533
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 91.392
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 91.477325
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 93.61066
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 94.39998
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 95.167984
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 95.50932
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 96.29866
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 97.301315
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 97.51465
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 99.28533
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 99.477325
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 99.58399
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 99.88265
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 100.20265
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 101.16265
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 101.354645
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 101.43998
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 101.567986
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 101.67465
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 102.14399
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 102.33598
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 102.44265
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 102.54932
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 102.65598
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 102.74132
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 102.847984
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 102.95465
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 103.06132
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 103.35998
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 103.57331
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 103.67998
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 103.786644
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 103.871994
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 103.97866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.08533
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.19199
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.29866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.40533
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.51199
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.61866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.72533
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.83199
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 104.93866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.04533
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.15199
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.25866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.365326
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.45066
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.55733
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.663994
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.74932
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.87733
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 105.98399
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 106.06932
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 106.17599
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 106.28265
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 107.11465
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 107.30664
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 107.41331
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 107.498665
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 107.69066
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 107.90399
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 108.20265
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 108.415985
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 108.52265
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 108.62932
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 108.735985
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 108.84265
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 108.94932
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 109.39732
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 109.61066
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 109.71732
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 109.82399
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 109.90932
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 110.01598
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 110.12265
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 110.22932
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 110.93331
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 111.146645
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 111.25331
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 111.33866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 111.466644
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 111.551994
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 111.65866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 111.76533
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 111.850655
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 111.95732
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.06399
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.19199
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.27732
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.38399
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.490654
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.59732
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.70399
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.81066
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 112.91733
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 113.023994
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 113.13066
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 113.23733
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 113.322655
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 115.072
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 115.34932
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 115.69066
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 116.373314
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 117.077324
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 119.63732
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 119.74399
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 120.08533
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 120.27732
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 121.49331
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 121.941315
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 122.15465
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 122.45331
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 122.879974
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 123.072
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 123.178665
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 123.28533
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 123.392
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 123.498665
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 123.60533
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 123.69066
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 123.797325
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 123.90399
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 124.01066
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 125.14131
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 125.41866
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 125.78132
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 126.847984
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 127.18932
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 127.59465
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 128.29866
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 129.04533
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 129.23732
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 129.344
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 129.45065
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 129.55733
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 129.66399
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 129.77066
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 129.87732
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 129.984
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 130.09065
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 130.19733
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 130.28265
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 130.38931
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 130.49599
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 131.456
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 131.64798
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 131.96799
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 133.61066
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 133.88799
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 134.18665
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 134.86932
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 135.50932
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 136.04265
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 137.40797
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 137.64265
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 137.94131
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 138.28265
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 138.58131
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 138.92265
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 139.22131
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 139.54132
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 140.01065
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 140.20265
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 140.28798
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 140.41599
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 140.84265
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 141.16266
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 141.46132
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 141.78131
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 142.07997
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 142.44266
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 142.74132
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 143.12534
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 143.31732
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 143.93599
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 144.21332
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 144.55464
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 144.81065
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 145.04533
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 145.344
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 145.59998
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 145.984
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 146.87997
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 147.54132
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 147.83998
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 148.30933
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 148.50131
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 148.60799
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 148.71465
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 148.82132
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 148.92798
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 149.03465
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 149.14131
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 149.24799
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 149.35464
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 150.03732
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 152.89598
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 153.04533
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 153.25867
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 153.55733
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 154.41066
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 154.58131
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 154.81598
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 155.0933
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 155.92532
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 156.15997
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 156.47998
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 156.82132
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 157.14131
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 157.54665
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 157.99464
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 158.33598
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 158.67732
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 159.06131
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 159.61598
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 159.80798
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 161.13066
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 161.38664
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 161.68533
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 162.00533
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 162.34665
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 162.66664
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 163.00798
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 163.34932
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 163.56265
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 163.64798
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 164.01065
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 164.20265
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 164.30933
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 164.41599
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 164.94933
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 165.29066
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 166.33598
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 166.63464
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 167.16798
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 167.35997
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 167.46664
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 167.5733
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 167.89331
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 168.23465
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 168.42665
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 169.19464
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 169.49332
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 170.17598
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 170.36798
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 170.47466
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 170.87997
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 171.13599
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 171.392
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 172.11732
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 172.30933
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 173.18399
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 173.46132
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 173.86664
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 174.16533
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 174.54932
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 174.95465
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 175.29599
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 176.63998
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 176.832
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 177.08798
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 177.30132
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 177.55733
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 178.19733
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 178.43199
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 178.66664
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 178.94398
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 179.83998
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 180.07465
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 180.33066
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 180.71465
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 180.97066
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 181.29066
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 181.58932
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 181.88799
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 182.20798
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 182.48534
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 182.74132
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 183.06131
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 184.34131
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 184.55464
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 184.76797
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 184.85332
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 185.21599
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 185.45065
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 185.74931
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 186.112
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 186.38931
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 186.68799
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 187.00798
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 187.37065
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 188.01065
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 188.20265
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 188.28798
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 188.41599
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 188.94933
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 189.29066
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 190.33598
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 190.74132
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 191.25331
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 191.46664
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 191.5733
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 191.91464
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 192.38399
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 192.57599
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 192.68265
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 192.76797
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 192.87465
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 192.98131
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 193.40797
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 193.72798
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 194.15465
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 194.36798
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 194.47466
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 194.58131
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 194.94398
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 195.22131
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 195.392
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 195.90399
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 196.15997
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 197.07733
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 197.35464
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 197.73866
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 198.144
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 198.82664
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 198.99733
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 199.10399
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 199.61598
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 199.80798
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 199.91464
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 200.29866
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 200.49066
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 200.59732
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 200.85332
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 201.53598
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 201.72798
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 201.83466
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 201.94131
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.04799
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.15465
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.26132
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.36798
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.47466
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.58131
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.68799
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.79465
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 202.90132
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 203.00798
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 203.11465
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 204.01065
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 204.18132
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 204.58664
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 204.79997
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 205.26932
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 205.52533
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 205.88799
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 206.20798
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 206.48534
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 206.784
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 207.08266
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 208.10664
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 208.29866
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 209.08798
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 209.36533
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 209.66399
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 210.15465
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 210.43199
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 210.79465
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 211.17867
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 211.37065
+    trackId: 0
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 211.90399
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 212.096
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 212.20265
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 212.30933
+    trackId: 1
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 212.864
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 213.29066
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 214.33598
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 214.61331
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 215.08266
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 215.27464
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 215.38132
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 215.48798
+    trackId: 4
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 215.82932
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 216.02132
+    trackId: 3
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 216.192
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 216.512
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 217.23732
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 217.45065
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 218.00533
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 218.64532
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 218.92265
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 219.15732
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 219.88266
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 220.11732
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 221.14131
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 221.43997
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 221.80266
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 222.12265
+    trackId: 4
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 222.65599
+    trackId: 3
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 223.44533
+    trackId: 1
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 224.08533
+    trackId: 0
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 224.74664
+    trackId: 2
+    state: 0
+    gameObject: {fileID: 0}
+  - timer: 224.91733
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.02399
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.13066
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.23732
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.344
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.45065
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.55733
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.68533
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.79199
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 225.89867
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 226.00533
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 226.112
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 226.21866
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 226.34665
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}
+  - timer: 226.45331
+    trackId: 2
+    state: 1
+    gameObject: {fileID: 0}

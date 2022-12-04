@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b9af05cc4e26942b44b4fba06c849c, type: 3}
+  m_Name: AssetScriptableObject
+  m_EditorClassIdentifier: 
+  button:
+    menuButton: {fileID: 2312587706141848025, guid: 0b1c34b7eceeb74409c3b5b1d0084f6f, type: 3}
+    storyButton: {fileID: 3689914281931827060, guid: 78a9f51c29fdd7d4bbf0eb23f2cfef8c, type: 3}
+    addButton: {fileID: 4761423546389503906, guid: aea09c2a9bdafad42bd155c7a24b0a31, type: 3}
+  image:
+    storyButtonImage:
+      list:
+      - Key: LoadingPadko
+        Value: {fileID: 21300000, guid: 96b5583e364cec2459215f5c5aa59b89, type: 3}
+  inputField:
+    charaListInput: {fileID: 6823875437287266948, guid: 4e387790234f1974895a23ac1b62dcb6, type: 3}
+    charaAttrInput: {fileID: 8035125295919402468, guid: ebf41360c92299548ae609cdcf10c288, type: 3}

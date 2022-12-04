@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c188b2a3ba86947a7f26e363193339, type: 3}
+  m_Name: "\u7D50\u5C40_DD\u88AB\u8E29\u721B\u4E86"
+  m_EditorClassIdentifier: 
+  dialogStage:
+    dialogList:
+    - dialogStr: "\u597D\u7D2F\u5594~\u8F49\u63DB\u4E0B\u5FC3\u60C5~\u9084\u662F\u53BBD\u8001\u5A46\u8C93\u597D\u4E86~"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u8D85\u8D8AK User!\u90A3\u662F\u4EC0\u9EBC!?"
+      speaker: 1
+      chara: 1
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 8300000, guid: 9a1698d9b1954cd489436ed7b187e1db, type: 3}
+    - dialogStr: "\u7CDF\u4E86!\u88AB\u5E73\u5E73\u5B50\u767C\u73FE\u6211\u5916\u9047\u7684\u4E8B\u5BE6\u4E86\uFF0C\u90A3\u53F0\u5E73\u677F\u770B\u8D77\u4F86\u5FEB\u6C23\u70B8\u4E86\uFF0C\u5FEB\u8DD1"
+      speaker: 0
+      chara: 3
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 8300000, guid: 6be94886c15d4df4e86fb4f13958d8a5, type: 3}
+    - dialogStr: "\u611F\u53D7\u5230\u5371\u6A5F\u7684\u6211\uFF0C\u671D\u8457\u99AC\u8DEF\u72C2\u5954\uFF0C\u4F46\u4E00\u5207\u90FD\u662F\u6C92\u7528\u7684"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u8EAB\u70BA\u9AD8\u6027\u80FD\u5E73\u677F\u7684\u5E73\u5E73\u5B50\uFF0C\u4EE5\u8FD130\u99AC\u8D6B\u7684\u901F\u5EA6\u8FFD\u4E0A\u4E86\u6211\uFF0C\u4E26\u628A\u6211\u903C\u8FD1\u5728\u4E86\u89D2\u843D"
+      speaker: 0
+      chara: 3
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u4F60\u5DF2\u7D93\u7121\u8DEF\u53EF\u9003\u4E86\uFF0CDD\u4ED4!"
+      speaker: 1
+      chara: 3
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 8300000, guid: 2101e8d12dcb7a1458a02b1db51f2ac8, type: 3}
+    - dialogStr: "\u653B\u64CA!\u653B\u64CA!\u523A\u4ED6\u80EF\u4E0B!\u6241\u4ED6\u80EF\u4E0B!"
+      speaker: 1
+      chara: 3
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 8300000, guid: bdb574049b1d73741963571fe391d82a, type: 3}
+    - dialogStr: "\u5728\u5287\u70C8\u7684\u75DB\u8655\u4E0B\uFF0C\u6211\u5931\u53BB\u4E86\u610F\u8B58......"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "Bad End:\u8D85\u8D8AK User\u7684\u90A3\u500B\u88AB\u5E73\u5E73\u5B50\u8E29\u721B\u4E86..."
+      speaker: 3
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 8300000, guid: 9119199f902b7cc41b5c44cd9cd6d9ae, type: 3}
+    - dialogStr: "Bad End:\u8D85\u8D8AK User\u7684\u90A3\u500B\u88AB\u5E73\u5E73\u5B50\u8E29\u721B\u4E86..."
+      speaker: 3
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 2
+      audio: {fileID: 0}
+  bgm: {fileID: 0}
+  track: {fileID: 0}
+  charaImg:
+  - {fileID: 21300000, guid: e4d24624bfa9ef14dab3a4f5cab05f96, type: 3}
+  - {fileID: 21300000, guid: 8196a814e5f9a7c4bbb14db94d3edbff, type: 3}

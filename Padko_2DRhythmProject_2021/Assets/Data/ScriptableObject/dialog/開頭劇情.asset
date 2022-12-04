@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c188b2a3ba86947a7f26e363193339, type: 3}
+  m_Name: "\u958B\u982D\u5287\u60C5"
+  m_EditorClassIdentifier: 
+  dialogStage:
+    dialogList:
+    - dialogStr: "\u6211\u7684\u540D\u5B57\u662F\u8D85\u8D8AK"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u65E9\u4E0A\u6211\u626E\u6F14\u8457\u5E73\u51E1\u7684\u5927\u5B78\u751F"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u5230\u4E86\u665A\u4E0A\uFF0C\u6211\u5247\u5316\u8EAB\u70BA\u611B\u7684\u7375\u4EBA"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u6C92\u932F\uFF0C\u6211\u662F\u5E73\u5E73\u5B50\u7684User\uFF0C\u540C\u6642\u4E5F\u662F\u5E73\u5E73\u5B50\u672A\u4F86\u7684\u8001\u516C\uFF0C\u597D\u50CF\u807D\u5230\u4E86\u4EC0\u9EBC\u61C9\u8A72\u662F\u932F\u89BA\u5427"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 8300000, guid: 3e50d31f4d4f74e4f9077a3597346480, type: 3}
+    - dialogStr: "\u4F60\u5982\u679C\u8981\u7AF6\u6A19\u7684\u8A71\uFF0C\u61C9\u8A72\u8981\u628A\u5E73\u5E73\u5B50\u5E36\u8D70\u963F"
+      speaker: 1
+      chara: 1
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 8300000, guid: dbfa66d381e65794ea6fdf55d5cf72b7, type: 3}
+    - dialogStr: "\u54E6\u54E6\uFF0C\u539F\u4F86\u662F\u6211\u5A46\u5728\u8B1B\u8A71!"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u6C92\u932F\uFF0C\u6211\u7684SC\u9084\u6296\u7684\u4E0D\u5920\u591A\uFF0C\u9019\u6A23\u4E0B\u53BB\u662F\u7121\u6CD5\u5E36\u8D70\u5E73\u5E73\u5B50\u7684"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 1
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u52DD\u8CA0\u5C31\u6C7A\u5B9A\u5728\u9019\u4E09\u5929\u7684\u4E09\u5834\u76F4\u64AD"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u6211\u8981\u628A\u6240\u6709\u9322\u8DDF\u5BB6\u7522\u90FD\u8F49\u63DB\u6210SC\u737B\u7D66\u5E73\u5E73\u5B50\uFF0C\u4E26\u5411\u5979\u544A\u767D!"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u6B63\u597D\u6211\u5A46\u73FE\u5728\u958B\u59CB\u5531\u6B4C\u4E86\uFF0C\u8D95\u5FEB\u7528SC\u652F\u63F4\u5979\u5427!"
+      speaker: 0
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u6211\u662F\u4F5C\u8005\uFF0C\u63A5\u4E0B\u4F86\u5C07\u9032\u5165\u6F14\u594F\u6A21\u5F0F~\u6211\u60F3\u7C21\u55AE\u4ECB\u7D39\u4E00\u4E0B"
+      speaker: 3
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u5728\u6F14\u594F\u6A21\u5F0F\u4E2D\uFF0C\u4F60\u8981\u914D\u5408\u5E73\u5E73\u5B50\u7684\u6B4C\u8072\uFF0C\u4F7F\u7528D,F,Space,J,K\u7B49\u6309\u9375\uFF0C\u4F86\u6D88\u9664\u98DB\u904E\u4F86\u7684\u7BC0\u62CD\uFF0C\u4E00\u822C\u7684\u7BC0\u62CD\u6309\u4E00\u4E0B\u5C31\u53EF\u4EE5\u6D88\u9664\uFF0C\u4F46\u767C\u4EAE\u7684\u7BC0\u62CD\u5247\u8981\u900F\u904E\u9577\u6309\u6309\u9375\u624D\u80FD\u6D88\u9664\u3002"
+      speaker: 3
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u7136\u5F8C\u5728\u6BCF\u6B21\u6F14\u594F\u7D50\u675F\u5F8C\uFF0C\u5C0D\u65BC\u6295\u4E86\u6700\u591ASC\u7684\u4F60\uFF0C\u5E73\u5E73\u5B50\u6703\u5411\u4F60\u63D0\u554F\uFF0C\u800C\u9019\u4E9B\u9078\u9805\u5247\u6703\u5F71\u97FF\u5230\u4F60\u6700\u7D42\u9762\u81E8\u751A\u9EBC\u6A23\u7684\u7D50\u5C40\u3002"
+      speaker: 3
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+    - dialogStr: "\u963F\u5C0D\u4E86\uFF0C\u5982\u679C\u4F60\u9023\u9019\u7A2E\u7A0B\u5EA6\u7684\u97F3\u904A\u90FD\u73A9\u4E0D\u8D77\u7684\u8A71\uFF0C\u5B8C\u5168\u53EF\u4EE5\u6309\u66AB\u505C\u9078\u8DF3\u904E\u54E6~\u795D\u4F60\u597D\u904B~"
+      speaker: 3
+      chara: 0
+      selectOptions: []
+      background: 0
+      eventState: 0
+      audio: {fileID: 0}
+  bgm: {fileID: 8300000, guid: e90190a126ccda14fa3e2e426e142bde, type: 3}
+  track: {fileID: 11400000, guid: 5adb11cf8d4a7b141a779385ccbc1a60, type: 2}
+  charaImg:
+  - {fileID: 21300000, guid: e4d24624bfa9ef14dab3a4f5cab05f96, type: 3}
+  - {fileID: 21300000, guid: 8196a814e5f9a7c4bbb14db94d3edbff, type: 3}
