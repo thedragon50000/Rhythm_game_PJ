@@ -39,7 +39,7 @@ namespace Game.MainMenu
         // public ReactiveProperty<string> sixKeysStr = new ReactiveProperty<string>();
         public Text sixKeysBindText;//顯示綁定的按鍵
         public bool isInputing;//正在綁定按鍵
-        public RhythmKeysType keyType;
+        public E_RhythmKeysType keyType;
         int keyMaxCount;
         int keyCount;
         List<KeyCode> kcList = new List<KeyCode>();
@@ -60,9 +60,9 @@ namespace Game.MainMenu
             //InputKey(fourKeysBindText, RhythmKeysType.four);
             if(fourKeysBindText != null)
             {
-                InitKeyBindTextShow(fourKeysButtonText, fourKeysBindText, RhythmKeysType.four);
-                InitKeyBindTextShow(fiveKeysButtonText, fiveKeysBindText, RhythmKeysType.five);
-                InitKeyBindTextShow(sixKeysButtonText, sixKeysBindText, RhythmKeysType.six);
+                InitKeyBindTextShow(fourKeysButtonText, fourKeysBindText, E_RhythmKeysType.four);
+                InitKeyBindTextShow(fiveKeysButtonText, fiveKeysBindText, E_RhythmKeysType.five);
+                InitKeyBindTextShow(sixKeysButtonText, sixKeysBindText, E_RhythmKeysType.six);
 
             }
             clap.isOn = (setting.clap == 1);
@@ -116,11 +116,11 @@ namespace Game.MainMenu
             {
                 if(!isInputing)
                 {
-                    InputKeyStart(fourKeysButtonText, fourKeysBindText, RhythmKeysType.four);
+                    InputKeyStart(fourKeysButtonText, fourKeysBindText, E_RhythmKeysType.four);
                 }
                 else //取消的話
                 {
-                    InitKeyBindTextShow(fourKeysButtonText, fourKeysBindText, RhythmKeysType.four);
+                    InitKeyBindTextShow(fourKeysButtonText, fourKeysBindText, E_RhythmKeysType.four);
                 }
                 
 
@@ -129,11 +129,11 @@ namespace Game.MainMenu
             {
                 if (!isInputing)
                 {
-                    InputKeyStart(fiveKeysButtonText, fiveKeysBindText, RhythmKeysType.five);
+                    InputKeyStart(fiveKeysButtonText, fiveKeysBindText, E_RhythmKeysType.five);
                 }
                 else //取消的話
                 {
-                    InitKeyBindTextShow(fiveKeysButtonText, fiveKeysBindText, RhythmKeysType.five);
+                    InitKeyBindTextShow(fiveKeysButtonText, fiveKeysBindText, E_RhythmKeysType.five);
                 }
                 //InputKeyUpdate(fiveKeysButtonText, fiveKeysBindText, RhythmKeysType.five);
             }).AddTo(this);
@@ -141,11 +141,11 @@ namespace Game.MainMenu
             {
                 if (!isInputing)
                 {
-                    InputKeyStart(sixKeysButtonText, sixKeysBindText, RhythmKeysType.six);
+                    InputKeyStart(sixKeysButtonText, sixKeysBindText, E_RhythmKeysType.six);
                 }
                 else //取消的話
                 {
-                    InitKeyBindTextShow(sixKeysButtonText, sixKeysBindText, RhythmKeysType.six);
+                    InitKeyBindTextShow(sixKeysButtonText, sixKeysBindText, E_RhythmKeysType.six);
                 }
             }).AddTo(this);
         }
@@ -178,9 +178,9 @@ namespace Game.MainMenu
             pages[1 - i].SetActive(false);
             if (fourKeysBindText != null)
             {
-                InitKeyBindTextShow(fourKeysButtonText, fourKeysBindText, RhythmKeysType.four);
-                InitKeyBindTextShow(fiveKeysButtonText, fiveKeysBindText, RhythmKeysType.five);
-                InitKeyBindTextShow(sixKeysButtonText, sixKeysBindText, RhythmKeysType.six);
+                InitKeyBindTextShow(fourKeysButtonText, fourKeysBindText, E_RhythmKeysType.four);
+                InitKeyBindTextShow(fiveKeysButtonText, fiveKeysBindText, E_RhythmKeysType.five);
+                InitKeyBindTextShow(sixKeysButtonText, sixKeysBindText, E_RhythmKeysType.six);
             }
 
         }
@@ -193,7 +193,7 @@ namespace Game.MainMenu
             CloseUI();
         }
 
-        public void InitKeyBindTextShow(Text buttonText, Text keyText, RhythmKeysType keysType = RhythmKeysType.five)
+        public void InitKeyBindTextShow(Text buttonText, Text keyText, E_RhythmKeysType keysType = E_RhythmKeysType.five)
         {
             var setting = PlayerSettings.Instance;
             isInputing = false;
@@ -208,7 +208,7 @@ namespace Game.MainMenu
             }
         }
 
-        void InputKeyStart(Text buttonText, Text keyText, RhythmKeysType keysType = RhythmKeysType.five)
+        void InputKeyStart(Text buttonText, Text keyText, E_RhythmKeysType keysType = E_RhythmKeysType.five)
         {
             isInputing = true;
             buttonText.text = "綁定中";
@@ -217,7 +217,7 @@ namespace Game.MainMenu
             this.keyType = keysType;
             kcList.Clear();
         }
-        void InputKeyEnd(Text buttonText, Text keyText, RhythmKeysType keysType = RhythmKeysType.five)
+        void InputKeyEnd(Text buttonText, Text keyText, E_RhythmKeysType keysType = E_RhythmKeysType.five)
         {
             isInputing = false;
             buttonText.text = "自定義";
@@ -229,17 +229,17 @@ namespace Game.MainMenu
         {
             Text buttonText = default; 
             Text keyText = default;
-            if (keyType == RhythmKeysType.four)
+            if (keyType == E_RhythmKeysType.four)
             {
                 buttonText = fourKeysButtonText;
                 keyText = fourKeysBindText;
             }
-            else if(keyType == RhythmKeysType.five)
+            else if(keyType == E_RhythmKeysType.five)
             {
                 buttonText = fiveKeysButtonText;
                 keyText = fiveKeysBindText;
             }
-            else if (keyType == RhythmKeysType.six)
+            else if (keyType == E_RhythmKeysType.six)
             {
                 buttonText = sixKeysButtonText;
                 keyText = sixKeysBindText;

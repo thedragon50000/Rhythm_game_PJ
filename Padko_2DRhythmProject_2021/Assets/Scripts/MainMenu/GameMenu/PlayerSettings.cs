@@ -30,7 +30,6 @@ namespace Game
 
         void Awake()
         {
-            
             LoadSettings();
             DontDestroyOnLoad(this);
         }
@@ -124,16 +123,16 @@ namespace Game
             SaveSetting();
             SaveDataController.SaveData(saveData);
         }
-        public KeyCode GetKeyCode(int i, RhythmKeysType keyType = RhythmKeysType.five)
+        public KeyCode GetKeyCode(int i, E_RhythmKeysType keyType = E_RhythmKeysType.five)
         { 
             
-            if(keyType == RhythmKeysType.four)
+            if(keyType == E_RhythmKeysType.four)
             {
                 if (i < 0 || i > 3)
                     return (KeyCode)saveData.rhythmKeys.fourKeys[0];
                 return (KeyCode)saveData.rhythmKeys.fourKeys[i];
             }
-            else if(keyType == RhythmKeysType.six)
+            else if(keyType == E_RhythmKeysType.six)
             {
                 if (i < 0 || i > 5)
                     return (KeyCode)saveData.rhythmKeys.sixKeys[0];
@@ -147,7 +146,7 @@ namespace Game
 
         public void SetFourKeyCodes(KeyCode k0, KeyCode k1, KeyCode k2, KeyCode k3)
         {
-            var fourKeys = new int[] { (int)k0, (int)k1, (int)k2, (int)k3 };
+            var fourKeys = new[] { (int)k0, (int)k1, (int)k2, (int)k3 };
             saveData.rhythmKeys.fourKeys = fourKeys;
         }
         public void SetFiveKeyCodes(KeyCode k0, KeyCode k1, KeyCode k2, KeyCode k3, KeyCode k4)
@@ -215,17 +214,15 @@ public class SaveDataController
     }
 }
 
-public class RhythmKeys//遊戲中用到按鍵類
+public class RhythmKeys //遊戲中用到按鍵類
 {
-    public int[] fourKeys = new int[] { (int)KeyCode.D, (int)KeyCode.F, (int)KeyCode.J, (int)KeyCode.K };
-    public int[] fiveKeys = new int[] { (int)KeyCode.D, (int)KeyCode.F, (int)KeyCode.Space, (int)KeyCode.J, (int)KeyCode.K };
-    public int[] sixKeys = new int[] { (int)KeyCode.F, (int)KeyCode.D, (int)KeyCode.S, (int)KeyCode.J, (int)KeyCode.K, (int)KeyCode.L };
-
+    public int[] fourKeys = { (int)KeyCode.D, (int)KeyCode.F, (int)KeyCode.J, (int)KeyCode.K };
+    public int[] fiveKeys = { (int)KeyCode.D, (int)KeyCode.F, (int)KeyCode.Space, (int)KeyCode.J, (int)KeyCode.K };
+    public int[] sixKeys = { (int)KeyCode.F, (int)KeyCode.D, (int)KeyCode.S, (int)KeyCode.J, (int)KeyCode.K, (int)KeyCode.L };
 }
-public enum RhythmKeysType
+public enum E_RhythmKeysType
 {
     four,
     five,
     six
-
 }

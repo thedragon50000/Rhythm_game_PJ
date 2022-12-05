@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class IAssetFactory : MonoBehaviour
 {
-    
     [SerializeField]
     public CreateAssetScriptableObject mCreateAsset;
     [SerializeField]

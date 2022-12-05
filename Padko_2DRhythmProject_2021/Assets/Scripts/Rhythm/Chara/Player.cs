@@ -29,9 +29,9 @@ public class Player : MonoBehaviour
     protected float doTime = 0.05f;
 
     [HideInInspector]
-    public bool isTenshi = false;//6K進入天使型態
+    public bool isTenshi = false;
 
-    public GameObject tenshiObj; //6K進入天使型態的翅膀
+    public GameObject tenshiObj;
 
     public int keyBlock;
     public bool isActive;
@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
         var exitDoClip = Observable.Timer(TimeSpan.FromSeconds(doTime * 3f))
         .Subscribe(_ =>
         {
-            //判斷這個時候是否還在按住 只要keyUP則
+            
             if (PlayController.Instance.keyStates[noteBlock] == (int)KeyState.tap)
             {
                 //if (PlayController.Instance.keyStates[noteBlock] != (int)KeyState.hold)
@@ -148,23 +148,23 @@ public class Player : MonoBehaviour
         }).AddTo(com);
     }
 
-    public virtual void ComboSkill(int combo)//根據Combo數觸發的能力
+    public virtual void ComboSkill(int combo)
     {
 
     }
 
-    public virtual int JudgeChangeSkill(int judge)//轉換判定的能力
+    public virtual int JudgeChangeSkill(int judge)
     {
 
         return judge;
 
     }
 
-    public virtual int JudgeSkill(int judge)//根據判定觸發的能力
+    public virtual int JudgeSkill(int judge)
     {
         return judge;
     }
-    public virtual double ScoreSkill(double score) { return score;  } //提高判定分數加成的能力
+    public virtual double ScoreSkill(double score) { return score;  }
 
 
 
@@ -172,16 +172,16 @@ public class Player : MonoBehaviour
 
         return ComboPresenter.MISS;
     }
-    public virtual int DeadSkill(int hp, int maxHp = default)//死亡時能觸發的能力
+    public virtual int DeadSkill(int hp, int maxHp = default)
     {
         return hp;
     }
-    public virtual int DamageSkill(int damage)//受傷時能觸發的能力
+    public virtual int DamageSkill(int damage)
     {
         return damage;
     }
 
-    public virtual void SwitchNoteAssetSkill(GameObject noteObj, GameObject holdNoteObj) //替換音符素材
+    public virtual void SwitchNoteAssetSkill(GameObject noteObj, GameObject holdNoteObj)
     {
         return;
     }

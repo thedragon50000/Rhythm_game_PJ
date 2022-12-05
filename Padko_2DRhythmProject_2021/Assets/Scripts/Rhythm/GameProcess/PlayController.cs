@@ -125,16 +125,16 @@ namespace Game.Process
         //测试当前最近的音符是否miss
         private void TestMiss(int lane)
         {
-            NoteObject gn;
+            NoteObject note;
             if (laneNotes[lane].Count > 0)
-                gn = laneNotes[lane].Peek();
+                note = laneNotes[lane].Peek();
             else return;
 
             //如果该音符已经被错过，直接增加一个miss
-            bool isOut = judgement.Out(gn);
+            bool isOut = judgement.Out(note);
             if (isOut)
             {
-                if (gn.isReActive)
+                if (note.isReActive)
                 {
                     laneNotes[lane].Dequeue().Miss();
                 }
@@ -142,28 +142,28 @@ namespace Game.Process
                 int missSkill = PlayerController.Instance.OutMissSkill(isOut);
                 //if (laneHolding[lane])
                 //    laneHolding[lane] = false;
-                if (missSkill != ComboPresenter.MISS && gn.Type() != 2)
+                if (missSkill != ComboPresenter.MISS && note.Type() != 2)
                 {
-                    ComboPresenter.Instance.Combo(missSkill, gn.Block());
+                    ComboPresenter.Instance.Combo(missSkill, note.Block());
                     laneNotes[lane].Dequeue().Click();
                     //if (PlayerSettings.Instance.clap == 1) SEPool.Instance.PlayClap();
                     return;
                 }
 
-                ComboPresenter.Instance.Combo(-1, gn.Block());
+                ComboPresenter.Instance.Combo(-1, note.Block());
                 laneNotes[lane].Dequeue().Miss();
 
                 //如果该音符是长押的第一个音，则第二个音符也miss
-                if (gn.Type() == 2)
+                if (note.Type() == 2)
                 {
                     laneHolding[lane] = false;
 
-                    var cn = gn.GetChainedNote();
+                    var cn = note.GetChainedNote();
                     if (cn != null)
                     {
                         if (cn == laneNotes[lane].Peek())
                         {
-                            ComboPresenter.Instance.Combo(-1, gn.Block());
+                            ComboPresenter.Instance.Combo(-1, note.Block());
                             laneNotes[lane].Dequeue().Miss();
                         }
                     }

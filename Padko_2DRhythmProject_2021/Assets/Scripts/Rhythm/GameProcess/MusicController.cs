@@ -143,9 +143,6 @@ namespace Game.Process
 
         }
 
-
-
-
         public void SetVolume()
         {
             volume = PlayerSettings.Instance.musicVolume;

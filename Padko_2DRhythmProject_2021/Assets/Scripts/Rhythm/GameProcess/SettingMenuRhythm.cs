@@ -68,19 +68,23 @@ namespace Game.Process
             {
                 Switch();
             }).AddTo(this);
+
+
+            #region 重新開始
+
             var reStartButtonStream = reStartButton.OnClickAsObservable();
 
             var reStartKeyCodeStream = this.UpdateAsObservable().Where(_ => Input.GetKeyDown(KeyCode.F5));
 
-            
-
             Observable.Merge(reStartButtonStream, reStartKeyCodeStream)
-            .Subscribe(_ =>
-            {
-                Apply();
-                MainMenuFacade.Instance.sceneChangeFlag = SceneChangeFlag.RhythmScene;
-                // do something
-            }).AddTo(this);
+                .Subscribe(_ =>
+                {
+                    Apply();
+                    MainMenuFacade.Instance.sceneChangeFlag = SceneChangeFlag.RhythmScene;
+                    // do something
+                }).AddTo(this);
+
+            #endregion
 
 
 

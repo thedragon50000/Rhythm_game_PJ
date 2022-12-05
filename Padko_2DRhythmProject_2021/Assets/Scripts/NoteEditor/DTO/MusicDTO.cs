@@ -17,9 +17,16 @@ namespace NoteEditor.DTO
         [System.Serializable]
         public class Note
         {
+            /// <summary>
+            /// LPB是啥小?
+            /// </summary>
             public int LPB;
             public int num;
+            /// /// <summary>
+            /// block是第幾Lane的意思？
+            /// </summary>
             public int block;
+            
             public int type;
             public List<Note> notes;
         }
