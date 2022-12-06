@@ -76,7 +76,8 @@ namespace Game.Process
 
             var reStartKeyCodeStream = this.UpdateAsObservable().Where(_ => Input.GetKeyDown(KeyCode.F5));
 
-            Observable.Merge(reStartButtonStream, reStartKeyCodeStream)
+            // Observable.Merge(reStartButtonStream, reStartKeyCodeStream)
+            reStartButtonStream.Merge(reStartKeyCodeStream)
                 .Subscribe(_ =>
                 {
                     Apply();
@@ -85,8 +86,6 @@ namespace Game.Process
                 }).AddTo(this);
 
             #endregion
-
-
 
             exitButton.OnClickAsObservable()
             .Subscribe(_ =>

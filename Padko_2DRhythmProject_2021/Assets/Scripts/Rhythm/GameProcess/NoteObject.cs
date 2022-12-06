@@ -67,6 +67,10 @@ namespace Game.Process
 
         public int Num() { return note.num;  }
 
+        /// <summary>
+        /// 第幾Lane
+        /// </summary>
+        /// <returns></returns>
         public int Block() { return note.block;  }
 
         public int Type() { return note.type;  }

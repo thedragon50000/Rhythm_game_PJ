@@ -7,24 +7,24 @@ namespace NoteEditor.Model
 {
     public class EditData : SingletonMonoBehaviour<EditData>
     {
-        ReactiveProperty<string> name_ = new ReactiveProperty<string>();
-        ReactiveProperty<int> maxBlock_ = new ReactiveProperty<int>(5);
-        ReactiveProperty<int> LPB_ = new ReactiveProperty<int>(4);
-        ReactiveProperty<int> BPM_ = new ReactiveProperty<int>(120);
-        ReactiveCollection<int> BPMs_ = new ReactiveCollection<int>();
-        ReactiveProperty<int> offsetSamples_ = new ReactiveProperty<int>(0);
-        Dictionary<NotePosition, NoteObject> notes_ = new Dictionary<NotePosition, NoteObject>();
+        ReactiveProperty<string> name_ = new();
+        ReactiveProperty<int> maxBlock_ = new(5);
+        ReactiveProperty<int> LPB_ = new(4);
+        ReactiveProperty<int> BPM_ = new(120);
+        ReactiveCollection<int> BPMs_ = new();
+        ReactiveProperty<int> offsetSamples_ = new(0);
+        Dictionary<NotePosition, NoteObject> notes_ = new();
 
-        public static ReactiveProperty<string> Name { get { return Instance.name_; } }
-        public static ReactiveProperty<int> MaxBlock { get { return Instance.maxBlock_; } }
-        public static ReactiveProperty<int> LPB { get { return Instance.LPB_; } }
-        public static ReactiveProperty<int> BPM { get { return Instance.BPM_; } }
-        
-        public static ReactiveCollection<int> BPMs { get { return Instance.BPMs_; } }
+        public static ReactiveProperty<string> Name => Instance.name_;
+        public static ReactiveProperty<int> MaxBlock => Instance.maxBlock_;
+        public static ReactiveProperty<int> LPB => Instance.LPB_;
+        public static ReactiveProperty<int> BPM => Instance.BPM_;
+
+        public static ReactiveCollection<int> BPMs => Instance.BPMs_;
         //把BPM改成List，來讓BPM可以中途變更
 
-        public static ReactiveProperty<int> OffsetSamples { get { return Instance.offsetSamples_; } }
-        public static Dictionary<NotePosition, NoteObject> Notes { get {
-                return Instance.notes_; } }
+        public static ReactiveProperty<int> OffsetSamples => Instance.offsetSamples_;
+
+        public static Dictionary<NotePosition, NoteObject> Notes => Instance.notes_;
     }
 }

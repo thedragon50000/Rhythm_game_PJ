@@ -190,6 +190,12 @@ namespace Game.Process
             return music.clip;
         }
 
+        /// <summary>
+        /// PCM 樣本中的播放位置。
+        /// Playback position in PCM samples.
+        /// 用以讀取當前播放時間或在樣本中尋找新的播放時間。
+        /// </summary>
+        /// <returns></returns>
         public int GetSamples()
         {
             return music.timeSamples;
@@ -214,6 +220,11 @@ namespace Game.Process
             return ConvertUtils.SamplesToTime(s, music.clip.frequency);
         }
 
+        /// <summary>
+        /// todo:為啥乘以頻率?
+        /// </summary>
+        /// <param name="time"></param>
+        /// <returns></returns>
         public float TimeToSample(float time)
         {
             if (music.clip == null) return 0;

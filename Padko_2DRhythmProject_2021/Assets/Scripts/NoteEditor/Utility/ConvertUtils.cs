@@ -18,6 +18,13 @@ namespace NoteEditor.Utility
             return Mathf.FloorToInt(note.num * (frequency * 60f / BPM / note.LPB));
         }
 
+        /// <summary>
+        /// 採樣率啥小的東西，
+        /// </summary>
+        /// <param name="note"></param>
+        /// <param name="frequency"></param>
+        /// <param name="BPM"></param>
+        /// <returns></returns>
         public static float NoteToSamples(Game.Process.NoteObject note, float frequency, int BPM)
         {
             return Mathf.FloorToInt(note.Num() * (frequency * 60f / BPM / note.LPB()));

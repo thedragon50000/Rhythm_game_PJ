@@ -21,24 +21,35 @@ namespace Game.Process
         /// 音符、長按的音符、兩個長按音符之間的延長線
         /// </summary>
         public GameObject notePrefab, holdNotePrefab, holdBarPrefab;
-        
+
         public List<MusicDTO.Note> notesInfo; //音符信息
-        
+
         // List<NoteObject> _listNotesActivated = new();//激活的音符对象
         public List<NoteObject> listNotesWaiting = new(); //等待激活的音符对象
 
         // [SerializeField] public int notesPerFrame = 50; //每一帧最多生成的音符数量
 
-        #region 數值
+        #region 遊戲中用不到的數值，打譜才要用
 
-        [HideInInspector] public int laneCount; //轨道数量
         [HideInInspector] public int BPM; //速度
-        [HideInInspector] public int offset; //开始的偏移时间
+        
+        /// <summary>
+        /// 開始的偏移時間，編譜的時候才用得到
+        /// </summary>
+        [HideInInspector] public int offset; 
+        
         [HideInInspector] public float frequency; //音乐频率
+
+        #endregion
+        
+        #region 數值
+        
+        [HideInInspector] public int laneCount; //轨道数量
         [HideInInspector] public float length; //音乐时长
         [HideInInspector] public string musicName;
+        
         [HideInInspector] public int musicLevel;
-        public int playerOffset; //玩家调整的延迟 todo:這啥??
+        public int playerOffset; //玩家调整的延迟 todo:遊戲開始後可在設定中調整的功能
         public int notesCount; //總共要打幾個note
 
         #endregion
@@ -54,7 +65,7 @@ namespace Game.Process
         #region 狀態判斷
 
         [HideInInspector] public bool playing = false; //播放中
-        private bool loading = false; //加载中
+        private bool _isLoading = false; //加载中
         [HideInInspector] public bool ready = false; //加载完毕
         [HideInInspector] public bool isEditMode = false; //編輯模式
 
@@ -62,9 +73,9 @@ namespace Game.Process
 
 
         [HideInInspector] public float noteMoveTime = 1.5f; //从出现到落到位置需要多久
-        
+
         //public float noteWaitTime = 5f;   //在开始移动前多久生成
-        
+
         private float noteMoveY;
         public E_RhythmKeysType keyType;
         [HideInInspector] public float maxNoteDoPosY; //最後會抵達的位置
@@ -102,10 +113,13 @@ namespace Game.Process
             #region 读取乐谱信息
 
             var editData = JsonUtility.FromJson<MusicDTO.EditData>(NotesContainer.Instance.json);
+            
             notesInfo = editData.notes;
             laneCount = editData.maxBlock;
             BPM = editData.BPM;
+            
             offset = editData.offset;
+            
             notesCount = NotesContainer.Instance.notesCount;
             musicName = NotesContainer.Instance.musicNameExtension;
             musicLevel = NotesContainer.Instance.level;
@@ -177,7 +191,7 @@ namespace Game.Process
 
         void Start()
         {
-            var doAtkAni = Observable.Timer(TimeSpan.FromSeconds(1))
+            Observable.Timer(TimeSpan.FromSeconds(1))
                 .Subscribe(_ =>
                 {
                     StartGame();
@@ -188,7 +202,7 @@ namespace Game.Process
         public void StartGame()
         {
             playing = false;
-            loading = true;
+            _isLoading = true;
             ready = false;
 
             ResetMusic();
@@ -245,33 +259,33 @@ namespace Game.Process
         {
             // GameNotePool pool = GameNotePool.Instance;
             ClearNotes();
-            
+
             PlayerController.Instance.SwitchNoteAssetSkill(notePrefab, holdNotePrefab);
-            
-            for (int i = 0; i < notesInfo.Count; i++)
+
+            foreach (var noteInfo in notesInfo)
             {
                 //生成音符
-                if (notesInfo[i].block >= laneCount)
+                if (noteInfo.block >= laneCount)
                     continue;
-                var dto = notesInfo[i];
+                var dto = noteInfo;
                 var type = dto.type;
                 var note = CreateNote(type);
-                
+
                 note.Init(dto);
                 listNotesWaiting.Add(note);
-                
-                
+
+
                 note.transform.SetParent(noteTracks[(int) keyType].noteFields[note.Block()]);
                 note.transform.localScale = new Vector2(0.8f, 0.8f);
 
                 // NoteLookAt(note.transform);
-                
+
                 //音符的時間
                 note.time = ConvertUtils.NoteToSamples(note, frequency, BPM) + playerOffset;
 
                 //音符的位置         
                 var targetY = noteTracks[(int) keyType].targetLines[0].GetComponent<RectTransform>().anchoredPosition.y;
-                
+
                 float y = targetY + noteMoveY * MusicController.Instance.SampleToTime(note.time + offset);
                 note.SetPosition(new Vector2(0, y));
 
@@ -319,11 +333,11 @@ namespace Game.Process
 
             SetDoNoteMove(0, time,
                 noteTracks[(int) keyType].noteFields[0].GetComponent<RectTransform>().anchoredPosition.y + 3000);
-            
+
             StartCoroutine(SetStartTimer());
-            
+
             yield return new WaitForSeconds(time);
-            
+
             ready = true;
             startTimerObj.SetActive(false);
             yield return null;
@@ -383,10 +397,10 @@ namespace Game.Process
         {
             #region 加载完成后，音符开始下落
 
-            if (loading && ready)
+            if (_isLoading && ready)
             {
                 playing = true;
-                loading = false;
+                _isLoading = false;
 
                 //audioMusic.Play();
                 MusicController.Instance.PlayMusic();
@@ -411,11 +425,9 @@ namespace Game.Process
                 listNotesWaiting.Remove(gn);
                 PlayController.Instance.NoteEnqueue(gn);
 
-                if (gn.Type() == 2)
-                {
-                    var cn = gn.GetChainedNote();
-                    PlayController.Instance.NoteEnqueue(cn);
-                }
+                if (gn.Type() != 2) continue;
+                var cn = gn.GetChainedNote();
+                PlayController.Instance.NoteEnqueue(cn);
             }
 
             #endregion

@@ -15,35 +15,36 @@ namespace Game.Process
     public class PlayController : SingletonMonoBehaviour<PlayController>
     {
         [HideInInspector] public int laneCount;
-        public List<Queue<NoteObject>> laneNotes = new List<Queue<NoteObject>>();
-        public List<Queue<NoteObject>> editLaneNotes = new List<Queue<NoteObject>>();
-        public bool[] laneHolding;
-        Queue<int> tmpLaneHold = new Queue<int>();
-        public ReactiveCollection<int> keyStates; //1按一下 2按住
-        private int offset;
-        private int BPM, LPB;
-        public GameObject player;
 
+        /// <summary>
+        /// 所有音符(分軌道)都加入各自的Queue(先進先出)
+        /// </summary>
+        private readonly List<Queue<NoteObject>> _listNoteQueue_of_EachLane = new();
+        // public List<Queue<NoteObject>> editLaneNotes = new();
+        public bool[] laneHolding;
+        // Queue<int> tmpLaneHold = new();
+        
+        public ReactiveCollection<int> keyStates; //1按一下 2按住
+        
         private Judgement judgement;
-        // private bool autoplay;
 
         public void Init(int c)
         {
             laneCount = c;
 
-            if (laneNotes.Count == laneCount)
+            if (_listNoteQueue_of_EachLane.Count == laneCount)
             {
                 for (int i = 0; i < laneCount; i++)
                 {
-                    laneNotes[i].Clear();
+                    _listNoteQueue_of_EachLane[i].Clear();
                 }
             }
             else
             {
-                laneNotes.Clear();
+                _listNoteQueue_of_EachLane.Clear();
                 for (int i = 0; i < laneCount; i++)
                 {
-                    laneNotes.Add(new Queue<NoteObject>());
+                    _listNoteQueue_of_EachLane.Add(new Queue<NoteObject>());
                 }
             }
 
@@ -60,15 +61,12 @@ namespace Game.Process
                 keyStates.Add((int)KeyState.none);
                 //keyStates[i] = (int)KeyState.none;
             }
-
-
-            offset = NotesController.Instance.offset;
-            BPM = NotesController.Instance.BPM;
-
+            
             judgement = new Judgement();
             judgement.SetSampleRange(0.05f, 0.10f, 0.125f, 0.15f);
-            judgement.SetEarly(-0.15f);
-            //judgement.SetEarly(-0.05f);
+            
+            // judgement.SetEarly(-0.15f);
+            // judgement.SetEarly(-0.05f);
         }
 
         public void Quit()
@@ -116,8 +114,7 @@ namespace Game.Process
                     Debug.Log("Note's block is false!");
                 else
                 {
-                    laneNotes[gn.Block()].Enqueue(gn);
-                    //editLaneNotes[gn.Block()].Enqueue(gn);
+                    _listNoteQueue_of_EachLane[gn.Block()].Enqueue(gn);
                 }
             }
         }
@@ -126,8 +123,8 @@ namespace Game.Process
         private void TestMiss(int lane)
         {
             NoteObject note;
-            if (laneNotes[lane].Count > 0)
-                note = laneNotes[lane].Peek();
+            if (_listNoteQueue_of_EachLane[lane].Count > 0)
+                note = _listNoteQueue_of_EachLane[lane].Peek();
             else return;
 
             //如果该音符已经被错过，直接增加一个miss
@@ -136,7 +133,7 @@ namespace Game.Process
             {
                 if (note.isReActive)
                 {
-                    laneNotes[lane].Dequeue().Miss();
+                    _listNoteQueue_of_EachLane[lane].Dequeue().Miss();
                 }
 
                 int missSkill = PlayerController.Instance.OutMissSkill(isOut);
@@ -145,13 +142,13 @@ namespace Game.Process
                 if (missSkill != ComboPresenter.MISS && note.Type() != 2)
                 {
                     ComboPresenter.Instance.Combo(missSkill, note.Block());
-                    laneNotes[lane].Dequeue().Click();
+                    _listNoteQueue_of_EachLane[lane].Dequeue().Click();
                     //if (PlayerSettings.Instance.clap == 1) SEPool.Instance.PlayClap();
                     return;
                 }
 
                 ComboPresenter.Instance.Combo(-1, note.Block());
-                laneNotes[lane].Dequeue().Miss();
+                _listNoteQueue_of_EachLane[lane].Dequeue().Miss();
 
                 //如果该音符是长押的第一个音，则第二个音符也miss
                 if (note.Type() == 2)
@@ -161,41 +158,41 @@ namespace Game.Process
                     var cn = note.GetChainedNote();
                     if (cn != null)
                     {
-                        if (cn == laneNotes[lane].Peek())
+                        if (cn == _listNoteQueue_of_EachLane[lane].Peek())
                         {
                             ComboPresenter.Instance.Combo(-1, note.Block());
-                            laneNotes[lane].Dequeue().Miss();
+                            _listNoteQueue_of_EachLane[lane].Dequeue().Miss();
                         }
                     }
                 }
             }
         }
 
-        private void LaneAutoPlay(int lane)
-        {
-            NoteObject gn;
-            if (laneNotes[lane].Count > 0)
-                gn = laneNotes[lane].Peek();
-            else return;
-
-            if (Mathf.Abs(GetDeltaTime(gn)) < MusicController.Instance.TimeToSample(0.1f))
-            {
-                var type = gn.Type();
-
-                switch (type)
-                {
-                    case 1:
-                        LaneKeyDown(lane);
-                        break;
-                    case 2:
-                        if (laneHolding[lane])
-                            LaneKeyUp(lane);
-                        else
-                            LaneKeyDown(lane);
-                        break;
-                }
-            }
-        }
+        // private void LaneAutoPlay(int lane)
+        // {
+        //     NoteObject gn;
+        //     if (listNotesLaneQueue[lane].Count > 0)
+        //         gn = listNotesLaneQueue[lane].Peek();
+        //     else return;
+        //
+        //     if (Mathf.Abs(GetDeltaTime(gn)) < MusicController.Instance.TimeToSample(0.1f))
+        //     {
+        //         var type = gn.Type();
+        //
+        //         switch (type)
+        //         {
+        //             case 1:
+        //                 LaneKeyDown(lane);
+        //                 break;
+        //             case 2:
+        //                 if (laneHolding[lane])
+        //                     LaneKeyUp(lane);
+        //                 else
+        //                     LaneKeyDown(lane);
+        //                 break;
+        //         }
+        //     }
+        // }
 
         private void LaneKeyUp(int lane)
         {
@@ -206,8 +203,8 @@ namespace Game.Process
                 laneHolding[lane] = false;
                 //获取最近的仍在判定区的音符
                 NoteObject gn;
-                if (laneNotes[lane].Count > 0)
-                    gn = laneNotes[lane].Peek();
+                if (_listNoteQueue_of_EachLane[lane].Count > 0)
+                    gn = _listNoteQueue_of_EachLane[lane].Peek();
                 else
                 {
                     return;
@@ -223,7 +220,7 @@ namespace Game.Process
                     if (gn.GetHoldingBar() != null)
                     {
                         gn.GetHoldingBar().SetColor(Color.gray);
-                        laneNotes[lane].Dequeue().Miss();
+                        _listNoteQueue_of_EachLane[lane].Dequeue().Miss();
                         ComboPresenter.Instance.Combo(-1, gn.Block());
                         Debug.Log("BarMiss");
                     }
@@ -249,13 +246,13 @@ namespace Game.Process
                 {
                     if (gn.GetHoldingBar() != null)
                         gn.GetHoldingBar().SetColor(Color.gray);
-                    laneNotes[lane].Dequeue().Miss();
+                    _listNoteQueue_of_EachLane[lane].Dequeue().Miss();
 
                     //holdingNoteList.Dequeue().Miss();
                 }
                 else
                 {
-                    laneNotes[lane].Dequeue().Click();
+                    _listNoteQueue_of_EachLane[lane].Dequeue().Click();
                 }
             }
         }
@@ -271,8 +268,8 @@ namespace Game.Process
             if (MusicController.Instance.GetSamples() <= 0) return;
             //获取最近的仍在判定区的音符
             NoteObject gn;
-            if (laneNotes[lane].Count > 0)
-                gn = laneNotes[lane].Peek();
+            if (_listNoteQueue_of_EachLane[lane].Count > 0)
+                gn = _listNoteQueue_of_EachLane[lane].Peek();
             else return;
 
             //判定
@@ -291,9 +288,9 @@ namespace Game.Process
                     result = PlayerController.Instance.JudgeChangeSkill(ComboPresenter.PERFECT);
                     ComboPresenter.Instance.Combo(result, gn.Block());
                     if (result == -1)
-                        laneNotes[lane].Dequeue().Miss();
+                        _listNoteQueue_of_EachLane[lane].Dequeue().Miss();
                     else
-                        laneNotes[lane].Dequeue().Click();
+                        _listNoteQueue_of_EachLane[lane].Dequeue().Click();
                     if (PlayerSettings.Instance.clap == 1) SEPool.Instance.PlayClap();
                 }
             }
@@ -303,7 +300,7 @@ namespace Game.Process
                 {
                     if (type == 1 || type == 3)
                     {
-                        laneNotes[lane].Dequeue().Miss();
+                        _listNoteQueue_of_EachLane[lane].Dequeue().Miss();
                     }
 
                     //如果该音符是长押的第一个音，则第二个音符也miss
@@ -313,10 +310,10 @@ namespace Game.Process
                         var cn = gn.GetChainedNote();
                         if (cn != null)
                         {
-                            if (cn == laneNotes[lane].Peek())
+                            if (cn == _listNoteQueue_of_EachLane[lane].Peek())
                             {
                                 ComboPresenter.Instance.Combo(-1, gn.Block());
-                                laneNotes[lane].Dequeue().Miss();
+                                _listNoteQueue_of_EachLane[lane].Dequeue().Miss();
                                 return;
                             }
                         }
@@ -324,12 +321,12 @@ namespace Game.Process
                 }
                 else
                 {
-                    laneNotes[lane].Dequeue().Click();
+                    _listNoteQueue_of_EachLane[lane].Dequeue().Click();
 
                     if (type == 2)
                     {
                         laneHolding[lane] = true;
-                        tmpLaneHold.Enqueue(lane);
+                        // tmpLaneHold.Enqueue(lane);
                         //holdingNoteList.Enqueue(gn);
                     }
                 }
@@ -344,53 +341,56 @@ namespace Game.Process
                 }
             }
         }
-
-        private float GetDeltaTime(NoteObject gn)
-        {
-            //Debug.Log(gn.num + ", " + ConvertUtils.NoteToSamples(gn.note, 1, BPM)+","+playtime);
-            float d = (MusicController.Instance.GetSamples() - (gn.time + offset));
-            //Debug.Log(gn.name + d);
-            //Debug.Log("delta: "+d);
-            return d;
-        }
+        
+        // private float GetDeltaTime(NoteObject gn)
+        // {
+        //     //Debug.Log(gn.num + ", " + ConvertUtils.NoteToSamples(gn.note, 1, BPM)+","+playtime);
+        //     float d = (MusicController.Instance.GetSamples() - (gn.time + _offset));
+        //     //Debug.Log(gn.name + d);
+        //     //Debug.Log("delta: "+d);
+        //     return d;
+        // }
     }
 
     class Judgement
     {
-        float[] sampleRange;
-
-        float early;
+        private float[] _hitTimingArray;
+        
+        // float early; //提早按?但是沒用到
 
         MusicController mc;
-        float offset;
-        int BPM;
+        private readonly float _offset;
 
         public Judgement()
         {
             mc = MusicController.Instance;
-            offset = NotesController.Instance.offset;
-            BPM = NotesController.Instance.BPM;
+            _offset = NotesController.Instance.offset;
         }
 
         public void SetSampleRange(float perfect, float great, float good, float bad)
         {
-            sampleRange = new float[]
+            _hitTimingArray = new[]
             {
                 mc.TimeToSample(perfect),
                 mc.TimeToSample(great),
                 mc.TimeToSample(good),
-                mc.TimeToSample(bad),
+                mc.TimeToSample(bad)
             };
         }
 
-        public void SetEarly(float e)
-        {
-            early = mc.TimeToSample(e);
-        }
+        // public void SetEarly(float e)
+        // {
+        //     early = mc.TimeToSample(e);
+        // }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gn"></param>
+        /// <returns></returns>
         public float GetDeltaSample(NoteObject gn)
         {
-            float d = (mc.GetSamples() - (gn.time + offset));
+            float d = mc.GetSamples() - (gn.time + _offset);
             return d;
         }
 
@@ -424,7 +424,7 @@ namespace Game.Process
 
             for (int i = 0; i < 3; i++)
             {
-                if (delta <= sampleRange[i]) return i;
+                if (delta <= _hitTimingArray[i]) return i;
                 //if (delta >= sampleRange[i])
                 //{
                 //    return i;
@@ -438,7 +438,7 @@ namespace Game.Process
         {
             //就是沒按按鍵導致的MISS
             var delta = GetDeltaSample(gn);
-            return delta > sampleRange[3];
+            return delta > _hitTimingArray[3];
         }
 
         public bool IsMissed(NoteObject gn)
