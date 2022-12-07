@@ -370,7 +370,7 @@ namespace Game.MusicSelect
             //ShowLoadInfo(fileInfo, "Json loaded!");
 
             int notesCount = 0;
-            foreach (var note in editData.notes)
+            foreach (var note in editData.listEndingNotes)
             {
                 //Debug.Log("noteBlock:" + note.block);
                 if (note.block >= editData.maxBlock)

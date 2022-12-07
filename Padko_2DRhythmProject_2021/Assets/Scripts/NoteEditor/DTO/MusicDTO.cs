@@ -11,7 +11,7 @@ namespace NoteEditor.DTO
             public int maxBlock;
             public int BPM;
             public int offset;
-            public List<Note> notes;
+            public List<Note> listEndingNotes;
         }
 
         [System.Serializable]
@@ -20,7 +20,7 @@ namespace NoteEditor.DTO
             /// <summary>
             /// 用於指定在一個節拍中播放多少條跟踪線。
             /// LPB 在大多數情況下會設置為 4
-            /// 也就是一拍對應4個按鈕，當然也可以增加
+            /// 也就是最小可細分到4分之1拍(16分音符)
             /// Lines Per Beat, and is used to specify how many tracker lines to play in one beat.
             /// In trackers, this value is often important since it sets the edit-resolution.
             /// LPB would in most situations be set to 4, and not changed afterwards.
@@ -44,9 +44,9 @@ namespace NoteEditor.DTO
             public int type;
             
             /// <summary>
-            /// todo:?
+            /// 長按音符的結束點
             /// </summary>
-            public List<Note> notes;
+            public List<Note> listEndingNotes;
         }
     }
 }

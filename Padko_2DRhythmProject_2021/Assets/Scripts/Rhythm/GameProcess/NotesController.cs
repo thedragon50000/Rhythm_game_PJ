@@ -114,7 +114,7 @@ namespace Game.Process
 
             var editData = JsonUtility.FromJson<MusicDTO.EditData>(NotesContainer.Instance.json);
             
-            notesInfo = editData.notes;
+            notesInfo = editData.listEndingNotes;
             laneCount = editData.maxBlock;
             BPM = editData.BPM;
             
@@ -292,13 +292,13 @@ namespace Game.Process
                 //對於長按條，生成結尾音符和hold條
                 if (type == 2)
                 {
-                    if (dto.notes.Count == 0)
+                    if (dto.listEndingNotes.Count == 0)
                     {
                         Debug.Log("Hold key has no ending!");
                     }
                     else
                     {
-                        var endDto = dto.notes[0];
+                        var endDto = dto.listEndingNotes[0];
 
                         var noteBar = CreateNote(2);
                         noteBar.Init(endDto);

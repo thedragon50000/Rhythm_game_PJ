@@ -21,13 +21,13 @@ namespace NoteEditor.Model
                 .Where(note => !((note.note.type == NoteTypes.Long || note.note.type == NoteTypes.Consecutive )&& EditData.Notes.ContainsKey(note.note.prev)))
                 .OrderBy(note => note.note.position.ToSamples(Audio.Source.clip.frequency, EditData.BPM.Value));
 
-            dto.notes = new List<MusicDTO.Note>();
+            dto.listEndingNotes = new List<MusicDTO.Note>();
 
             foreach (var noteObject in sortedNoteObjects)
             {
                 if (noteObject.note.type == NoteTypes.Single)
                 {
-                    dto.notes.Add(ToDTO(noteObject));
+                    dto.listEndingNotes.Add(ToDTO(noteObject));
                 }
                 else if (noteObject.note.type == NoteTypes.Long || noteObject.note.type == NoteTypes.Consecutive)
                 {
@@ -37,11 +37,11 @@ namespace NoteEditor.Model
                     while (EditData.Notes.ContainsKey(current.note.next))
                     {
                         var nextObj = EditData.Notes[current.note.next];
-                        note.notes.Add(ToDTO(nextObj));
+                        note.listEndingNotes.Add(ToDTO(nextObj));
                         current = nextObj;
                     }
 
-                    dto.notes.Add(note);
+                    dto.listEndingNotes.Add(note);
                 }
             }
 
@@ -60,7 +60,7 @@ namespace NoteEditor.Model
             EditData.MaxBlock.Value = editData.maxBlock;
             EditData.OffsetSamples.Value = editData.offset;
 
-            foreach (var note in editData.notes)
+            foreach (var note in editData.listEndingNotes)
             {
                 if (note.type == 1)
                 {
@@ -68,7 +68,7 @@ namespace NoteEditor.Model
                     continue;
                 }
 
-                var longNoteObjects = new[] { note }.Concat(note.notes)
+                var longNoteObjects = new[] { note }.Concat(note.listEndingNotes)
                     .Select(note_ =>
                     {
                         notePresenter.AddNote(ToNoteObject(note_));
@@ -99,7 +99,7 @@ namespace NoteEditor.Model
             else if (noteObject.note.type == NoteTypes.Consecutive)
                 note.type = 3;
             //note.type = noteObject.note.type == NoteTypes.Long ? 2 : 1;
-            note.notes = new List<MusicDTO.Note>();
+            note.listEndingNotes = new List<MusicDTO.Note>();
             return note;
         }
 

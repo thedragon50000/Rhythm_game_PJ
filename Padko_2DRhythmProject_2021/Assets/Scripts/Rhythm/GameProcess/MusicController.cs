@@ -220,11 +220,6 @@ namespace Game.Process
             return ConvertUtils.SamplesToTime(s, music.clip.frequency);
         }
 
-        /// <summary>
-        /// todo:為啥乘以頻率?
-        /// </summary>
-        /// <param name="time"></param>
-        /// <returns></returns>
         public float TimeToSample(float time)
         {
             if (music.clip == null) return 0;
